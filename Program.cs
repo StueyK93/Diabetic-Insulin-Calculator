@@ -99,7 +99,7 @@ class Program
                 Console.ResetColor();
                 Console.WriteLine(" units of insulin for your meal.");
                 Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine($"Your current blood sugarl level, {sugarLevel}, is over the normal quantity, you will need to adjust for this");
+                Console.WriteLine($"Your current blood sugar level, {sugarLevel}, is over the normal quantity, you will need to adjust for this");
                 Console.ResetColor();
 
 
@@ -112,7 +112,7 @@ class Program
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.Write($"{sugarLevel}");
                 Console.ResetColor();
-                Console.Write(" you may need to take a correct dosage of insulin.");
+                Console.Write(" you may need to take a correction dosage of insulin.");
                 Console.WriteLine();
             }
             else if (aboutToEat != "n" || aboutToEat != "y")
