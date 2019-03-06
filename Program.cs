@@ -4,13 +4,13 @@ class Program
     static void Main()
     {
 
-        //Diabetic Carb Calculator
+        //Diabetic Insulin Calculator
 
 
         Console.SetWindowSize(100,30);
         Console.SetBufferSize(100,30);
 
-        Console.Title = "Carb/Sugar Level Calculator";
+        Console.Title = "Insulin Calculator";
 
 
         Console.WriteLine("What is your blood sugar level?");
