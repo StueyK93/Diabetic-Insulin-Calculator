@@ -3,21 +3,17 @@ class Program
 {
     static void Main()
     {
-
         //Diabetic Insulin Calculator
-
 
         Console.SetWindowSize(100,30);
         Console.SetBufferSize(100,30);
 
         Console.Title = "Insulin Calculator";
 
-
         Console.WriteLine("What is your blood sugar level?");
         float sugarLevel = (float)Convert.ToDouble(Console.ReadLine());
 
         Console.WriteLine();
-
 
         if (sugarLevel <= 4.4)
         {
@@ -28,7 +24,6 @@ class Program
             Console.WriteLine("- you need to have food or a sugary drink quickly.");
             Console.WriteLine();
         }
-
         else if (sugarLevel >= 4.5 && sugarLevel <= 8.4)
         {
             Console.WriteLine();
@@ -40,7 +35,6 @@ class Program
             Console.WriteLine();
             string aboutToEat = Console.ReadLine();
             Console.WriteLine();
-
 
             if (aboutToEat == "y")
             {
@@ -63,15 +57,12 @@ class Program
 
             else if (aboutToEat == "n")
             {
-
             }
             else if (aboutToEat != "n" || aboutToEat != "y")
             {
                 Console.WriteLine("Response not recognised");
             }
-
         }
-
         else if (sugarLevel >= 8.5)
         {
             Console.ForegroundColor = ConsoleColor.Red;
@@ -101,10 +92,7 @@ class Program
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine($"Your current blood sugar level, {sugarLevel}, is over the normal quantity, you will need to adjust for this");
                 Console.ResetColor();
-
-
             }
-
             else if (aboutToEat == "n")
             {
                 Console.WriteLine();
