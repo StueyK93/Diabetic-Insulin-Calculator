@@ -51,10 +51,7 @@ class Program
                 Console.Write($"{insulinToTake}");
                 Console.ResetColor();
                 Console.WriteLine(" units of insulin for your meal.");
-
-
             }
-
             else if (aboutToEat == "n")
             {
             }
@@ -110,4 +107,3 @@ class Program
         }
     }
 }
-
